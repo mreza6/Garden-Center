@@ -6,9 +6,6 @@ window.onload = function() {
   document.querySelector('.plants').onclick = showPlants;
   document.querySelector('.decor').onclick = showDecor;
   document.querySelector('.contact').onclick = showContact;
-  document.querySelector('#question').onclick = hideInput;
-  document.querySelector('#comment').onclick = hideInput;
-  document.querySelector('#order').onclick = showInput;
 };
 
 // hides other categories
@@ -136,17 +133,5 @@ function showContact() {
   var homeButton = document.querySelector('.home');
   if (homeButton.id === 'active') {
     homeButton.id = '';
-  }
-}
-
-function showInput() {
-  var orderNumberBody = document.getElementById('orderNumber');
-  orderNumberBody.style.display = 'block';
-}
-
-function hideInput() {
-  var orderNumberBody = document.getElementById('orderNumber');
-  if (orderNumberBody.style.display === 'block') {
-    orderNumberBody.style.display = 'none';
   }
 }

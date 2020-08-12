@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Garden Center</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -13,7 +13,19 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel&family=Days+One&family=Julius+Sans+One&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
+    <script>
+      function showInput() {
+        var orderNumberBody = document.getElementById('orderNumber');
+        orderNumberBody.style.display = 'block';
+      }
+
+      function hideInput() {
+        var orderNumberBody = document.getElementById('orderNumber');
+        if (orderNumberBody.style.display === 'block') {
+          orderNumberBody.style.display = 'none';
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
