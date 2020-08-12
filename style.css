@@ -1,0 +1,589 @@
+/* Add any CSS you need to this file. */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+}
+
+header h1 {
+  background-color: white;
+  font-family: 'Julius Sans One', sans-serif;
+  color: rgb(8, 97, 8);
+  font-size: 16px;
+}
+
+header h1 img {
+  height: 30px;
+  width: 30px;
+  padding: 15px 15px 15px 100px;
+  vertical-align: middle;
+}
+
+header p {
+  background-color: beige;
+  padding: 10px;
+  text-align: center;
+  color: seagreen;
+  font-family: 'Cinzel', serif;
+  font-size: 12px;
+}
+
+body {
+  background-image: url('images/grass.jpg');
+  height: 100%;
+  background-size: 100%;
+  background-position: center;
+  box-sizing: border-box;
+  backdrop-filter: blur(2px);
+}
+
+nav {
+  background: darkgreen;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+}
+
+nav ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+nav ul li {
+  width: 100%;
+  margin: 8px 10px 5px;
+  padding: 10px;
+  height: 5px;
+  white-space: nowrap;
+  font-family: 'Days One', sans-serif;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 5px;
+  color: white;
+  vertical-align: middle;
+}
+
+nav ul li a i {
+  padding-bottom: 30px;
+}
+
+#active,
+nav ul li:hover {
+  background-color: seagreen;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.gallery {
+  margin: 0 0 0 5px;
+  padding: 14px 0 0 10px;
+  padding-bottom: 200px;
+}
+
+.gallery img {
+  border-radius: 1.5em;
+  padding: 5px;
+  width: 29%;
+}
+
+.garden {
+  filter: brightness(70%);
+}
+
+.garden:hover {
+  filter: brightness(100%);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+#home {
+  max-height: 3000px;
+  display: none;
+  position: relative;
+}
+
+#home p {
+  padding-top: 100px;
+}
+
+#tools {
+  max-height: 3000px;
+  display: none;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+#plants {
+  max-height: 3000px;
+  display: none;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+#decor {
+  max-height: 3000px;
+  display: none;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+#home p {
+  padding-left: 0;
+  background-color: beige;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: seagreen;
+  font-family: 'Cinzel', serif;
+}
+
+.chili img,
+.cucumber img,
+.pepper img,
+.potato img,
+.spinach img,
+.tomato img,
+.can img,
+.hose img,
+.rake img,
+.shears img,
+.shovel img,
+.sprinkler img,
+.birdhouse img,
+.chair img,
+.fire img,
+.flowerpot img,
+.hammock img,
+.planter img {
+  height: 200px;
+  width: 300px;
+  border: 7px solid rgb(236, 216, 37);
+  border-radius: 1.5em;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+  margin: 50px 0 0 7%;
+  display: inline-block;
+}
+
+.description {
+  background-color: beige;
+  font-family: 'Cinzel', serif;
+  text-decoration: seagreen;
+  border-radius: 0.5em;
+}
+
+.description h4 {
+  margin-top: 5px;
+  margin-left: 10px;
+  padding-top: 5px;
+  text-align: left;
+  color: seagreen;
+}
+
+.description p {
+  max-width: 300px;
+  margin-top: 5px;
+  margin-left: 10px;
+  word-wrap: break-word;
+}
+
+.description h2 {
+  margin-top: 5px;
+  margin-left: 10px;
+  text-align: left;
+  color: darkred;
+}
+
+#contact {
+  max-height: 3000px;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+#contact form {
+  padding: 20px 0 0 20px;
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  background-color: beige;
+  margin: 40px 40px 0 40px;
+  border-radius: 1em;
+}
+
+#contact form input {
+  margin-bottom: 20px;
+  font-family: 'Cinzel', serif;
+}
+
+#orderNumber {
+  display: none;
+}
+
+#message {
+  padding-bottom: 20px;
+  width: 1000px;
+}
+
+#submit {
+  width: 100px;
+  border-radius: 2em;
+  background-color: darkgreen;
+  color: white;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+}
+
+#submit:hover {
+  background-color: seagreen;
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  background-color: white;
+}
+
+footer a {
+  vertical-align: middle;
+  color: darkgreen;
+  padding-right: 1px;
+}
+
+footer form {
+  float: right;
+}
+
+footer form input {
+  font-family: 'Cinzel', serif;
+  font-size: 5px;
+  vertical-align: middle;
+}
+
+.subscribe {
+  width: 40px;
+  border-radius: 2em;
+  background-color: darkgreen;
+  color: white;
+}
+
+.subscribe:hover {
+  background-color: seagreen;
+}
+
+footer p {
+  vertical-align: middle;
+  float: left;
+  margin-right: 60px;
+  padding-top: 5px;
+  font-family: 'Cinzel', serif;
+  font-size: xx-small;
+  color: darkgreen;
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1000px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  header h1 {
+    text-align: center;
+    background-color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 30px;
+    color: rgb(8, 97, 8);
+  }
+
+  header h1 img {
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    vertical-align: middle;
+  }
+
+  header p {
+    background-color: beige;
+    padding: 10px;
+    text-align: center;
+    color: seagreen;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+  }
+
+  body {
+    background-image: url('images/grass.jpg');
+    height: 100%;
+    background-size: 100%;
+    background-position: center;
+    box-sizing: border-box;
+    backdrop-filter: blur(2px);
+  }
+
+  nav {
+    background: darkgreen;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  nav ul {
+    display: inline-flex;
+    list-style: none;
+  }
+
+  nav ul li {
+    width: 180px;
+    margin: 10px;
+    padding: 10px 10px 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-family: 'Days One', sans-serif;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+  }
+
+  nav ul li a i {
+    padding-right: 10px;
+  }
+
+  #active,
+  nav ul li:hover {
+    background-color: seagreen;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+  }
+
+  .gallery {
+    margin: 0 0 0 5px;
+    padding: 14px 0 0 40px;
+  }
+
+  .gallery img {
+    border-radius: 1.5em;
+    padding: 10px;
+    width: 30%;
+  }
+
+  .garden {
+    filter: brightness(70%);
+  }
+
+  .garden:hover {
+    filter: brightness(100%);
+    transform: scale(1.1);
+    transition: 1s;
+  }
+
+  #home {
+    max-height: 265px;
+    display: none;
+    position: relative;
+  }
+
+  #tools {
+    max-height: 235px;
+    display: none;
+    position: relative;
+  }
+
+  #plants {
+    max-height: 235px;
+    display: none;
+    position: relative;
+  }
+
+  #decor {
+    max-height: 235px;
+    display: none;
+    position: relative;
+  }
+
+  #home p {
+    background-color: beige;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: seagreen;
+    font-family: 'Cinzel', serif;
+  }
+
+  .chili img,
+  .cucumber img,
+  .pepper img,
+  .potato img,
+  .spinach img,
+  .tomato img,
+  .can img,
+  .hose img,
+  .rake img,
+  .shears img,
+  .shovel img,
+  .sprinkler img,
+  .birdhouse img,
+  .chair img,
+  .fire img,
+  .flowerpot img,
+  .hammock img,
+  .planter img {
+    height: 200px;
+    width: 300px;
+    border: 7px solid rgb(236, 216, 37);
+    border-radius: 1.5em;
+  }
+
+  .item1,
+  .item4 {
+    margin: 50px 0 0 6.7%;
+    display: inline-block;
+  }
+
+  .item2,
+  .item3 {
+    margin: 50px 0 0 5%;
+    display: inline-block;
+  }
+
+  .item5,
+  .item6 {
+    margin: 50px 0 0 5%;
+    display: inline-block;
+  }
+
+  .description {
+    background-color: beige;
+    font-family: 'Cinzel', serif;
+    text-decoration: seagreen;
+    border-radius: 0.5em;
+  }
+
+  .description h4 {
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-top: 5px;
+    text-align: left;
+    color: seagreen;
+  }
+
+  .description p {
+    max-width: 300px;
+    margin-top: 5px;
+    margin-left: 10px;
+    word-wrap: break-word;
+  }
+
+  .description h2 {
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: left;
+    color: darkred;
+  }
+
+  #contact {
+    max-height: 235px;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  #contact form {
+    padding: 20px 0 0 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    background-color: beige;
+    margin: 40px 40px 0 40px;
+    border-radius: 1em;
+  }
+
+  #contact form input {
+    margin-bottom: 20px;
+    font-family: 'Cinzel', serif;
+  }
+
+  #orderNumber {
+    display: none;
+  }
+
+  #message {
+    padding-bottom: 20px;
+    width: 1000px;
+  }
+
+  #submit {
+    width: 100px;
+    border-radius: 2em;
+    background-color: darkgreen;
+    color: white;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+  }
+
+  #submit:hover {
+    background-color: seagreen;
+  }
+
+  footer {
+    margin-top: 600px;
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+    background-color: white;
+  }
+
+  footer a {
+    vertical-align: middle;
+    color: darkgreen;
+    padding-right: 10px;
+  }
+
+  footer form {
+    float: right;
+  }
+
+  footer form input {
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    vertical-align: middle;
+  }
+
+  .subscribe {
+    width: 100px;
+    border-radius: 2em;
+    background-color: darkgreen;
+    color: white;
+  }
+
+  .subscribe:hover {
+    background-color: seagreen;
+  }
+
+  footer p {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-right: 20px;
+    float: left;
+    padding-top: 0;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    color: darkgreen;
+  }
+}
